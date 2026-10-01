@@ -1,0 +1,4 @@
+# Optional: only needed for the live-camera backend (pose/mediapipe_backend.py).
+# The simulated demo runs on requirements.txt alone.
+mediapipe>=0.10
+opencv-python>=4.8

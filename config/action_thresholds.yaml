@@ -1,0 +1,30 @@
+# ============================================================================
+# Action-Sentinel: action thresholds
+# ----------------------------------------------------------------------------
+# PLACEHOLDER VALUES — NOT operational standards.
+#
+# TODO(ezra): replace every value below with thresholds validated from your
+# real deployments (prison / facility rollouts). The detectors are simple
+# rules; the thresholds are what make them trustworthy. Do not ship or demo
+# these numbers as if they were field standards.
+# ============================================================================
+
+hand_raise:
+  # Wrist must be this far ABOVE the shoulder (normalized coords, y=0 at top)
+  # to count as "raised".
+  raise_margin: 0.05            # TODO(ezra): field-validated margin
+  # Frames the wrist must stay raised before the "up" state latches.
+  min_hold_frames: 3            # TODO(ezra): field-validated hold
+
+loitering:
+  # Seconds a person must stay within `radius` to trigger an alert.
+  dwell_time_sec: 30.0          # TODO(ezra): field-validated dwell time
+  # Max centroid movement (normalized units) still considered "stationary".
+  radius: 0.08                 # TODO(ezra): field-validated radius
+
+fall:
+  # Hip height used as the standing baseline when no calibration run exists.
+  standing_hip_y: 0.62         # TODO(ezra): calibrate per camera geometry
+  # Hip must drop by this fraction of baseline within `drop_time_sec`.
+  drop_ratio: 0.45             # TODO(ezra): field-validated drop ratio
+  drop_time_sec: 1.0           # TODO(ezra): field-validated drop window
