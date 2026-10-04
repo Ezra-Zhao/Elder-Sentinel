@@ -1,10 +1,10 @@
 # ============================================================================
-# Action-Sentinel: action thresholds
+# Elder-Sentinel: action thresholds
 # ----------------------------------------------------------------------------
 # PLACEHOLDER VALUES — NOT operational standards.
 #
 # TODO(ezra): replace every value below with thresholds validated from your
-# real deployments (prison / facility rollouts). The detectors are simple
+# real deployments (care-home / facility rollouts). The detectors are simple
 # rules; the thresholds are what make them trustworthy. Do not ship or demo
 # these numbers as if they were field standards.
 # ============================================================================

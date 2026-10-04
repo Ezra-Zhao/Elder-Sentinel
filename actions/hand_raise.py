@@ -2,7 +2,8 @@
 
 A raise = wrist rises above (shoulder - raise_margin) and holds for
 min_hold_frames, then comes back down. Counts completed up->down cycles
-per side — e.g. "inmate raised right hand 4 times in the last minute".
+per side — e.g. "resident waved right hand 4 times in the last minute"
+(call-for-help signal).
 
 TODO(ezra): field-validate raise_margin / min_hold_frames; consider
 per-camera calibration (angle changes apparent geometry).

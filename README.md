@@ -1,11 +1,12 @@
-# Action-Sentinel
+# Elder-Sentinel
 
-**Pose-based action recognition for correctional-facility safety monitoring.**
+**Pose-based action recognition for elder-care safety monitoring.**
 
 A real-time pipeline that watches body movement — not identity — and flags
-safety-relevant events: repeated hand-raise gestures, loitering in restricted
-zones, and falls. Built for the realities of correctional facilities, where
-early warning of an incident can prevent violence and save lives.
+safety-relevant events: help-seeking gestures, wandering into off-limits
+areas, and falls. Built for the realities of care homes, where caregivers
+can't be in every room at once, and where a fall detected minutes earlier
+can save a life.
 
 > **Project status: scaffold v0.1 (honest edition).**
 > The end-to-end pipeline runs today on **procedurally generated, simulated**
@@ -19,12 +20,14 @@ early warning of an incident can prevent violence and save lives.
 
 ## Background
 
-In correctional facilities, officers can't watch every corridor at once. This
-system defines measurable *action standards* — e.g. "hand raised above shoulder
-N times in M seconds", "person stationary in zone for T seconds", "sudden
-vertical drop consistent with a fall" — and raises alerts the moment a live
-pose stream matches one. The same architecture applies anywhere safety depends
-on body movement: elder-care fall detection, warehouse safety zones.
+In a care home, caregivers can't watch every room at once. This system
+defines measurable *action standards* — e.g. "hand raised above shoulder
+N times in M seconds" as a call-for-help signal, "resident stationary
+near a stairwell or exit for T seconds", "sudden vertical drop consistent
+with a fall" — and raises alerts the moment a live pose stream matches
+one. The same architecture applies anywhere safety depends on body
+movement without identifying the person: elder-care fall detection,
+hospital ward monitoring, assisted-living wandering alerts.
 
 ## What it does
 
@@ -59,7 +62,7 @@ on body movement: elder-care fall detection, warehouse safety zones.
 ## Quickstart
 
 ```bash
-cd Action-Sentinel
+cd Elder-Sentinel
 pip install -r requirements.txt
 python examples/demo.py        # simulated end-to-end demo
 python -m pytest tests/ -q     # unit tests
@@ -97,9 +100,9 @@ trustworthy. Do not present placeholder values as operational standards.
   matching, and no person re-identification. It answers "what is the body
   doing", never "who is this".
 - **Authorized safety use only.** Intended solely for lawful, authorized safety
-  deployments (e.g. licensed correctional-facility monitoring). Do not use for
-  covert surveillance, and do not deploy without proper legal authorization and
-  oversight.
+  deployments (e.g. licensed elder-care facilities, with family/guardian
+  consent). Do not use for covert surveillance, and do not deploy without
+  proper legal authorization and oversight.
 - **Simulated data.** Every demo frame is procedurally generated and labeled
   `simulated: true`. Nothing here was recorded from real people.
 

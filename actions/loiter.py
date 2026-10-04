@@ -5,7 +5,7 @@ If the centroid never leaves a `radius` box for the whole window, emit
 one loiter_alert (re-arms once the person moves away).
 
 TODO(ezra): field-validate dwell_time_sec / radius; production version
-should gate on zone polygons (restricted area), not the whole frame.
+should gate on zone polygons (kitchen, stairwell, exit), not the whole frame.
 """
 from events import Event
 
