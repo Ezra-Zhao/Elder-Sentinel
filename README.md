@@ -4,7 +4,7 @@
 
 A real-time pipeline that watches body movement — not identity — and flags
 safety-relevant events: help-seeking gestures, wandering into off-limits
-areas, and falls. Built for the realities of care homes, where caregivers
+areas, prolonged inactivity that may signal a problem, and falls. Built for the realities of care homes, where caregivers
 can't be in every room at once, and where a fall detected minutes earlier
 can save a life.
 
