@@ -18,6 +18,8 @@ can save a life.
 
 ---
 
+
+Support & more: [GitHub Sponsors](https://github.com/sponsors/Ezra-Zhao) · [Gumroad — templates & workbooks I use](https://ezraflow28.gumroad.com) · [Ko-fi](https://ko-fi.com/ezra777zhao)
 ## Background
 
 In a care home, caregivers can't watch every room at once. This system
